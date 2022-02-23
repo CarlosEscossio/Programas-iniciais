@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaIdade(anoAtual, anoNascimento) {
+		return anoAtual - anoNascimento;
+	}
+
+	function calculaImc(altura, peso) {
+		return peso/ (altura * altura);
+	}
+
+	var nome = prompt("Qual o seu nome ?");
+	var anoNascimento = prompt(nome + ", qual seu ano de nascimento ?");
+	var anoAtual = prompt(nome + ", seu ultimo aniversario foi em que ano ?");
+	var idade = calculaIdade(anoAtual, anoNascimento);
+
+	var alturaInformada = prompt(nome + ", qual é a sua altura ?");
+	var pesoInformado = prompt(nome + ", qual é o seu peso ?");
+	var imc = calculaImc(alturaInformada, pesoInformado);
+
+
+	mostra("Carlos, sua idade é " + idade + ".");
+	mostra(nome + ", o seu IMC calculado é " + imc);
+	mostra("Magreza, quando o resultado é menor que 18,5 kg/m2;");
+	mostra("Normal, quando o resultado está entre 18,5 e 24,9 kg/m2;");
+	mostra("Sobrepeso, quando o resultado está entre 24,9 e 30 kg/m2;");
+	mostra("Obesidade, quando o resultado é maior que 30 kg/m2.");
+
+
+</script>

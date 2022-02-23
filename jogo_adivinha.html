@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numeroPensado = 5;
+	var chute = parseInt(prompt("Chute um número de 1 a 10"));
+
+	if(chute == numeroPensado){
+		mostra("Você acertou!");
+
+	} else {
+		mostra("Você errou, o número pensando foi " + numeroPensado);
+	}
+
+	
+	
+</script>
